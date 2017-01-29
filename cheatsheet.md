@@ -37,4 +37,29 @@ Example: `gcc main.cpp -o main -lncurses`
 |keypad(stdscr,TRUE)|Enable reading of fucntion keys.|
 |halfdelay()|Enable the half−delay mode, it waits for 'X' tenths of a second for input and then returns ERR, if no input is available|
 
+##Miscellaneous Functions
+
+|Functions|Discription|
+|-------------|-------------|
+|clear()|Clear the screen|
+|move(y,x)|Move to cursor to the x,y position on the screen.|
+|getmaxyx(stdscr,y,x)|Get the boundaries of the screeen i.e. number of rows and columns|
+|getyx(std,y,x)|Get the current cusor position|
+
+##Output Functions
+
+|Functions|Discription|
+|-------------|-------------|
+|**addch()**|**Print a character with given attributes at the current cursor position and advance the position of the cursor.**|
+|mvaddch()|Move the cursor to a given point and then print as by addch().|
+|waddch()|Print a character as by addch() but into the given window.|
+|mvwaddch()|Move the cursor to a given point and then print as by addch() but into the given window.|
+|**printw()**|**Print similar to printf() at the current cursor position and advance the position of the cursor.**|
+|mvprintw()|Move the cursor to a given point and then print as by printw().|
+|wprintw()|Print as by printw() but into the given window.|
+|mvwprintw()|Move the cursor to a given point and then print as by printw() but into the given window.|
+|**addstr()**|**Print a character string with given attributes at the current cursor position and advance the position of the cursor.**|
+|mvaddstr()|Move the cursor to a given point and then print as by addstr().|
+|waddstr()|Print a character string as by addstr() but into the given window.|
+|mvwaddstr()|Move the cursor to a given point and then print as by addstr() but into the given window.|
 ***More yet to come. Under progress...***
