@@ -39,8 +39,10 @@ Example: `gcc main.cpp -o main -lncurses`
 
 |Functions|Discription|
 |-------------|-------------|
-|clear()|Clear the screen|
-|move(y,x)|Move to cursor to the x,y position on the screen.|
+|clear()|Clear the stdscr window.|
+|wclear()|Clear the given window.|
+|move(y,x)|Move the cursor to the x,y position on the window.|
+|wmove(win,y,x)|Move the cursor to the x,y position on the given window.|
 |getmaxyx(stdscr,y,x)|Get the boundaries of the screeen i.e. number of rows and columns|
 |getyx(std,y,x)|Get the current cusor position|
 
