@@ -44,7 +44,7 @@ Example: `gcc main.cpp -o main -lncurses`
 |move(y,x)|Move the cursor to the x,y position on the window.|
 |wmove(win,y,x)|Move the cursor to the x,y position on the given window.|
 |getmaxyx(stdscr,y,x)|Get the boundaries of the screeen i.e. number of rows and columns|
-|getyx(std,y,x)|Get the current cusor position|
+|getyx(stdscr,y,x)|Get the current cusor position|
 
 ##Output Functions
 
@@ -79,5 +79,42 @@ Example: `gcc main.cpp -o main -lncurses`
 |mvgetstr()|Move the cursor to a given position and then input as by getstr().|
 |wgetstr()|Input a character string as by getstr() but from the given window.|
 |mvwgetstr()|Move the cursor to a given position and then input as by getstr() but from the given window.|
+
+##Attribute Functions
+
+|Functions|Discription|
+|-------------|-------------|
+|**attron()**|**Switches on attribute(s) given to it.**|
+|wattron()|Switches on attribute(s) given to it, in the given window.|
+|**attrset()**|**Fully overrides whatever attributes the window previously had and sets it to the new attribute(s).**|
+|wattrset()|Fully overrides whatever attributes the given window previously had and sets it to the new attribute(s).|
+|**attroff()**|**Switches off the attribute(s) given to it.**|
+|wattroff()|Switches off the attribute(s) given to it, in the given window.|
+|**standend()**|**Turns off all attributes and brings you to normal mode.**|
+|**attr_get()**|**Gets the current attributes and color pair of the window.**|
+|wattr_get()|Gets the current attributes and color pair of the given window.|
+|**chgat()**|**Change attribute(s) for characters that are already on the screen.**|
+|mvchgat()|Move the cursor to the given position and then perform the work as by chgat().|
+|wchgat()|Perform the work done as by chgat() on the given window.|
+|mvwchgat()|Move the cursor to the given position and then perform the work as by chgat() on the given window.|
+
+##Attributes List
+
+We can **OR(|)** any number of above attributes to get a combined effect.
+
+|Functions|Discription|
+|-------------|-------------|
+|A_NORMAL| Normal display (no highlight).|
+|A_STANDOUT| Best highlighting mode of the terminal.|
+|A_UNDERLINE| Underlining.|
+|A_REVERSE| Reverse video.|
+|A_BLINK| Blinking.|
+|A_DIM| Half bright.|
+|A_BOLD| Extra bright or bold.|
+|A_PROTECT| Protected mode.|
+|A_INVIS| Invisible or blank mode.|
+|A_ALTCHARSET| Alternate character set.|
+|A_CHARTEXT| Bit−mask to extract a character.|
+|COLOR_PAIR(n)| Color−pair number n.|
 
 ***More yet to come. Under progress...***
