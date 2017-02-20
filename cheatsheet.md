@@ -27,6 +27,7 @@ Example: `gcc main.cpp -o main -lncurses`
 |-------------|-------------|
 |initscr()|Initializes the terminal in cursor mode. It must be called first to do any manupulation with ncurses package.|
 |refresh()|Tell the curses system to dump the contents on the screen. It checks the window and updates only the portion which has been changed.|
+|wrefresh()|Tell the curses system to dump the contents on the given window. It checks the given window and updates only the portion which has been changed.|
 |endwin()|Ends the terminal cursor mode.|
 |raw()|Disable inline buffering. Control characters are directly passed to the program without generating a signal.|
 |cbreak()|Disable inline buffering. Control characters are interpreted as any other character by the terminal driver.|
