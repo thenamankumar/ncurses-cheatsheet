@@ -1,9 +1,9 @@
 # A Handy Ncurses Cheatsheet
 A handy cheatsheet for programmers working with [ncurses library by GNU](https://www.gnu.org/software/ncurses/). Complete inshort documentation and usage details. This is a reference doc which will help you in the process of building up great interactive command line projects using the ncurses library by GNU.
 
->Read My Ncurses Cheatsheet [HERE](https://github.com/hereisnaman/ncurses-cheatsheet/blob/master/cheatsheet.md).
+> Read My Ncurses Cheatsheet [HERE](https://github.com/hereisnaman/ncurses-cheatsheet/blob/master/cheatsheet.md).
 
-#Table of Contents
+# Table of Contents
 1. [How to install ncurses](https://github.com/hereisnaman/ncurses-cheatsheet/blob/master/cheatsheet.md#how-to-install-ncurses)
 2. [How to link ncurses with project](https://github.com/hereisnaman/ncurses-cheatsheet/blob/master/cheatsheet.md#how-to-link-ncurses-with-project)
 3. [Initialization Functions](https://github.com/hereisnaman/ncurses-cheatsheet/blob/master/cheatsheet.md#initialization-functions)
@@ -13,7 +13,7 @@ A handy cheatsheet for programmers working with [ncurses library by GNU](https:/
 
 More yet to come. Under progress...
 
-#Copyright
+# Copyright
 
 This is free and unencumbered software released into the public domain.
 
