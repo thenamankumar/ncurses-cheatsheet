@@ -1,27 +1,27 @@
-#A Handy Ncurses Cheatsheet
+# A Handy Ncurses Cheatsheet
 A handy cheatsheet for programmers working with [ncurses library by GNU](https://www.gnu.org/software/ncurses/). Complete inshort documentation and usage details. This is a reference doc which will help you in the process of building up great interactive command line projects using the ncurses library by GNU.
 
 
-##How to install ncurses
+## How to install ncurses
 Well installing ncurses library is an easy task, you just have to follow the steps listed below:
 
-###Installing ncurses on Debian/Ubuntu Linux
+### Installing ncurses on Debian/Ubuntu Linux
 1. `sudo apt-get install libncurses5-dev libncursesw5-dev`
 
-###Installing ncurses on Mac OS X
+### Installing ncurses on Mac OS X
 1. Install [Homebrew](http://brew.sh/) (if not already):
 `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
 2. Install ncurses package: `$brew install homebrew/dupes/ncurses`
 
 
-##How to link ncurses with project
+## How to link ncurses with project
 
 Command structure: `g++ ${file} -o ${file_path}/${file_base_name} -lncurses`
 
 Example: `gcc main.cpp -o main -lncurses`
 
 
-##Initialization Functions
+## Initialization Functions
 
 |Functions|Discription|
 |-------------|-------------|
@@ -36,7 +36,7 @@ Example: `gcc main.cpp -o main -lncurses`
 |keypad(stdscr,TRUE)|Enable reading of fucntion keys.|
 |halfdelay()|Enable the half−delay mode, it waits for 'X' tenths of a second for input and then returns ERR, if no input is available|
 
-##Miscellaneous Functions
+## Miscellaneous Functions
 
 |Functions|Discription|
 |-------------|-------------|
@@ -47,7 +47,7 @@ Example: `gcc main.cpp -o main -lncurses`
 |getmaxyx(stdscr,y,x)|Get the boundaries of the screeen i.e. number of rows and columns|
 |getyx(stdscr,y,x)|Get the current cusor position|
 
-##Output Functions
+## Output Functions
 
 |Functions|Discription|
 |-------------|-------------|
@@ -64,7 +64,7 @@ Example: `gcc main.cpp -o main -lncurses`
 |waddstr()|Print a character string as by addstr() but into the given window.|
 |mvwaddstr()|Move the cursor to a given position and then print as by addstr() but into the given window.|
 
-##Input Functions
+## Input Functions
 
 |Functions|Discription|
 |-------------|-------------|
@@ -81,7 +81,7 @@ Example: `gcc main.cpp -o main -lncurses`
 |wgetstr()|Input a character string as by getstr() but from the given window.|
 |mvwgetstr()|Move the cursor to a given position and then input as by getstr() but from the given window.|
 
-##Attribute Functions
+## Attribute Functions
 
 |Functions|Discription|
 |-------------|-------------|
@@ -99,7 +99,7 @@ Example: `gcc main.cpp -o main -lncurses`
 |wchgat()|Perform the work done as by chgat() on the given window.|
 |mvwchgat()|Move the cursor to the given position and then perform the work as by chgat() on the given window.|
 
-##Attributes List
+## Attributes List
 
 We can **OR(|)** any number of above attributes to get a combined effect.
 
