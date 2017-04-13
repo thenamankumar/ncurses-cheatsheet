@@ -118,4 +118,38 @@ We can **OR(|)** any number of above attributes to get a combined effect.
 |A_CHARTEXT| Bit−mask to extract a character.|
 |COLOR_PAIR(n)| Color−pair number n.|
 
-***More yet to come. Under progress...***
+## Color Functions
+
+|Functions|Discription|
+|-------------|-------------|
+|start_color()| Needed to be called before using colors.|
+|has_colors()| Check whether terminal has color capabilities.|
+|init_pair()| Initiate a color pair number n with foreground and background color, which can be used in COLOR_PAIR(n).|
+|init_color()| Change the rgb values for the colors defined by curses initially.|
+|can_change_color()| Check whether the terminal has the capability of changing color.|
+
+## Colors
+
+The following colors are defined in curses.h. You can use these as parameters for various color functions.
+
+|Colors|Code|
+|-------------|-------------|
+|COLOR_BLACK| 0|
+|COLOR_RED| 1|
+|COLOR_GREEN| 2|
+|COLOR_YELLOW| 3|
+|COLOR_BLUE| 4|
+|COLOR_MAGENTA| 5|
+|COLOR_CYAN| 6|
+|COLOR_WHITE| 7|
+
+## Windows Functions
+
+|Functions|Discription|
+|-------------|-------------|
+|box()| Draw border around windows.
+|newwin()| Creates a new Window.|
+|create_newwin()| Creates a new window with newwin() and displays a border around it with box().|
+|delwin()| Deallocate memory related to the window.|
+|destroy_win()| Erases the window from the screena dn then delete it by calling delwin()|
+|wborder()| Draws a border around the window by the characters given to it.|
