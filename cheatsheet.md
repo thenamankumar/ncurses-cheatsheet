@@ -151,5 +151,5 @@ The following colors are defined in curses.h. You can use these as parameters fo
 |newwin()| Creates a new Window.|
 |create_newwin()| Creates a new window with newwin() and displays a border around it with box().|
 |delwin()| Deallocate memory related to the window.|
-|destroy_win()| Erases the window from the screena dn then delete it by calling delwin()|
+|destroy_win()| Erases the window from the screen and then delete it by calling delwin()|
 |wborder()| Draws a border around the window by the characters given to it.|
