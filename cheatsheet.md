@@ -70,7 +70,7 @@ Example: `gcc main.cpp -o main -lncurses`
 |-------------|-------------|
 |**getch()**|**Input a character with given attributes from the current cursor position and advance the position of the cursor.**|
 |mvgetch()|Move the cursor to a given position and then input as by getch().|
-|whetch()|Input a character as by getch() but from the given window.|
+|wgetch()|Input a character as by getch() but from the given window.|
 |mvwgetch()|Move the cursor to a given position and then input as by getch() but into the given window.|
 |**scanw()**|**Takes input similar to scanf() but from any position on the window i.e. current cursor position and advance the position of the cursor.**|
 |mvscanw()|Move the cursor to a given position and then input as by scanw().|
